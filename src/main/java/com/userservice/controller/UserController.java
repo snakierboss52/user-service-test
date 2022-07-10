@@ -1,7 +1,7 @@
-package com.tutorial.userservice.controller;
+package com.userservice.controller;
 
-import com.tutorial.userservice.entity.User;
-import com.tutorial.userservice.service.UserService;
+import com.userservice.entity.User;
+import com.userservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
