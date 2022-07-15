@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-user-deployment
+  labels:
+    app: service-user-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-user-deployment
+  template:
+    metadata:
+      labels:
+        app: service-user-deployment
+    spec:
+      containers:
+        - name: service-user-deployment
+          image: k8s-service-deploy:0.0.1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9090
